@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.andhika.testarchitecture_navigation.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_pertamaFragment"
+            app:destination="@id/pertamaFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_keduaFragment"
+            app:destination="@id/keduaFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_passingDataFragment"
+            app:destination="@id/passingDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pertamaFragment"
+        android:name="com.andhika.testarchitecture_navigation.PertamaFragment"
+        android:label="fragment_pertama"
+        tools:layout="@layout/fragment_pertama" >
+        <argument
+            android:name="data"
+            android:defaultValue=" "
+            app:type="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/keduaFragment"
+        android:name="com.andhika.testarchitecture_navigation.KeduaFragment"
+        android:label="fragment_kedua"
+        tools:layout="@layout/fragment_kedua" />
+    <fragment
+        android:id="@+id/passingDataFragment"
+        android:name="com.andhika.testarchitecture_navigation.PassingDataFragment"
+        android:label="fragment_passing_data"
+        tools:layout="@layout/fragment_passing_data" />
+</navigation>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">testArchitecture_navigation</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtFragment_1">Fragment 1</string>
+    <string name="txtFragment_2">Fragment 2</string>
+    <string name="txtFragment_satu">Fragment Pertama</string>
+    <string name="txtFragment_kedua">Fragment Kedua</string>
+    <string name="txtPass">Passing Data</string>
+</resources>
